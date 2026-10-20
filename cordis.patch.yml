@@ -1,0 +1,6 @@
+# dsh-macos-notify bundle patch: mount the host plugin under its package name.
+# The host half registers the `turn-notify` session projection; the client half
+# is picked up by dsh-client-modules through the package's dsh.client entry.
+- insert:
+    - id: dsh-macos-notify
+      name: '@apodemakeles/dsh-macos-notify'
